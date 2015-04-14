@@ -1,0 +1,5 @@
+include README.txt
+include __init__.py
+recursive-include adpytools *.py *.txt
+prune build
+prune dist
