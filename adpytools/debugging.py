@@ -118,7 +118,7 @@ def Debug(name=" "):
     "DEBUG" environment variable.
     """
     global __vars
-    return __vars.has_key(name)
+    return name in __vars
 
 
 def DebugSet(name=" "):
@@ -202,4 +202,4 @@ def DebugMessage(msg, level="DEBUG"):
 
 
 __version__ = '$Id: debugging.py 4 2007-05-09 13:50:41Z adoyle $'
-if Debug('version'): print __version__
+if Debug('version'): print(__version__)
